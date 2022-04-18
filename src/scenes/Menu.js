@@ -14,7 +14,7 @@ class Menu extends Phaser.Scene {
         // menu text config
         let menuConfig = {
             fontFamiy: 'Courier',
-            fontSize: '28px',
+            fontSize: '23px',
             backgroundColor: '#F3B141',
             color: '#843605',
             align: 'right',
@@ -27,7 +27,7 @@ class Menu extends Phaser.Scene {
         // show menu text
         this.add.text(game.config.width/2, game.config.height/2 - borderUISize -
         borderPadding, 'ROCKET PATROL 2.0', menuConfig).setOrigin(0.5);
-        this.add.text(game.config.width/2, game.config.height/2, 'Use the (←→) arrow keys to move & (F)key to fire!', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/2, 'Use the (←→) keys to move & (F)key to fire!', menuConfig).setOrigin(0.5);
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
         this.add.text(game.config.width/2, game.config.height/2 + borderUISize +
